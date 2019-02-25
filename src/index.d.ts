@@ -1,6 +1,13 @@
-import { Common } from './skeleton.common';
-export declare class Skeleton extends Common {
-  // define your typings manually
-  // or..
-  // take the ios or android .d.ts files and copy/paste them here
+import { SkeletonGroupBase, SkeletonViewBase } from "./skeleton.common";
+export declare class SkeletonGroup extends SkeletonGroupBase {
+  nativeView: io.rmiri.skeleton.SkeletonGroup;
+  createNativeView(): Object;
+  initNativeView(): void;
+  disposeNativeView(): void;
+}
+export declare class Skeleton extends SkeletonViewBase {
+  nativeView: io.rmiri.skeleton.SkeletonView;
+  createNativeView(): Object;
+  initNativeView(): void;
+  disposeNativeView(): void;
 }

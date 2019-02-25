@@ -1,5 +1,5 @@
-import { Common } from './skeleton.common';
+import { SkeletonGroupBase } from './skeleton.common';
 
-export class Skeleton extends Common {
+export class SkeletonGroup extends SkeletonGroupBase {
 
 }
